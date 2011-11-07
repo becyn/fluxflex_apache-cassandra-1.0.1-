@@ -1,0 +1,13 @@
+#########################################
+#
+# fluxflex configuration for drupal 7.9
+#
+#########################################
+
+[setup]
+# I changed public_html/sites/default/default.settings.php to ./settings.php.
+cp -afrp public_html/sites/default/default.settings.php public_html/sites/default/settings.php
+chmod o+rwx -f public_html/sites/default/settings.php
+
+[deploy]
+chmod o+rwx -Rf public_html/sites/default/
