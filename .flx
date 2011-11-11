@@ -10,4 +10,5 @@ cp -afrp public_html/sites/default/default.settings.php public_html/sites/defaul
 chmod o+rwx -f public_html/sites/default/settings.php
 
 [deploy]
-chmod o+rwx -Rf public_html/sites/default/
+chmod o+r public_html/.htaccess
+chmod o+rwx -Rf public_html/wp-content/
